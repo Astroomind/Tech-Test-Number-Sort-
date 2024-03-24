@@ -1,0 +1,22 @@
+﻿<!-- Index.cshtml -->
+@{
+    ViewData["Title"] = "Sort Numbers";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="SortNumbers" method="post">
+    <div>
+        <label for="numbers">Enter numbers (comma-separated):</label>
+        <input type="text" id="numbers" name="numbers" required>
+    </div>
+    <div>
+        <label for="sortDirection">Sort Direction:</label>
+        <select id="sortDirection" name="sortDirection">
+            <option value="Ascending">Ascending</option>
+            <option value="Descending">Descending</option>
+        </select>
+    </div>
+    <button type="submit">Sort and Save</button>
+</form>
+

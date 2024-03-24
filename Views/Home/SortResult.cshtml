@@ -1,0 +1,9 @@
+﻿@model SortResult
+
+<h2>Sorted Numbers:</h2>
+<p>Numbers: @Model.Numbers</p>
+<p>Sort Direction: @Model.SortDirection</p>
+<p>Time Taken: @Model.TimeTaken</p>
+<form asp-action="ExportToJson" method="post">
+    <button type="submit">Export as JSON</button>
+</form>
